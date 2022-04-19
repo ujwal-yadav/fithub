@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import logo from "../images/slogo.svg";
 
 export const Signup = () => {
   const [loader, setLoader] = useState(false);
@@ -65,8 +66,9 @@ export const Signup = () => {
         <div className="content-contenaire">
           <div className="top-container">
             <h1>
-              <i className="fab fa-servicestack ">
-                <span className="px-2 fw-bold">
+              <i class="fa">
+                <img src={logo} width="30" height="30" />
+                <span class="px-2 fw-bold">
                   FIT<span className="hub">HUB</span>
                 </span>
               </i>

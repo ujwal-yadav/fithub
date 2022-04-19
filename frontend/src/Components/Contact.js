@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/slogo.svg";
 
 export const Contact = () => {
   return (
@@ -62,8 +63,9 @@ export const Contact = () => {
           >
             <div className="navbar-brand mx-3">
               <h1>
-                <i class="fab fa-servicestack ">
-                  <span class="px-2 fw-bold">
+                <i className="fa">
+                  <img src={logo} width="30" height="30" />
+                  <span className="px-2 fw-bold">
                     FIT<span className="hub">HUB</span>
                   </span>
                 </i>

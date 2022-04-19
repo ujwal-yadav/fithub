@@ -1,18 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Mulish&family=Archivo:wght@700;800&family=Montserrat:wght@700&family=Roboto:wght@700&family=Titillium+Web:wght@600&family=Varela&display=swap");
-/*font-family: 'Archivo', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Titillium Web', sans-serif;
-font-family: 'Varela', sans-serif;*/
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 ::-webkit-scrollbar-track {
   background-color: #ffffff00;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #575f6b;
+  background-color: #42495882;
   border-radius: 90px;
 }
 
@@ -42,18 +37,23 @@ html {
 .navbar .dropdown a {
   color: rgb(65, 154, 255);
 }
+
+#nav .navbar-brand i img {
+  margin-bottom: 1.6px;
+}
 #nav .navbar-toggler {
   transition: 0.3s;
 }
 
 #header {
-  height: 89vh;
+  min-height: 89vh;
 }
 
 .navbar .container-fluid {
   width: 91vw;
   height: 40px;
 }
+
 .container-fluid h2 {
   font-weight: 900;
   color: #353e5c;
@@ -62,9 +62,16 @@ html {
   font-weight: 900;
   color: #2e91fc;
 }
-.navbar-nav a {
-  color: #2d2d36;
+.navbar-nav .nav-link {
+  color: #353e5c;
+  letter-spacing: 0.5px;
 }
+.nav-link {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 .toogle-button i {
   background-color: #504f4f16;
   padding: 10px;
@@ -99,21 +106,13 @@ html {
   color: #2f3338;
 }
 
-.nav-link {
-  color: rgb(155, 140, 140);
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
 .join-btn {
   font-size: 1.4rem;
-  letter-spacing: 1px;
   padding: 4px 30px;
   border-radius: 25px;
   text-decoration: none;
   color: hsl(212, 49%, 35%);
-  border: 2px solid #353e5c;
+  border: 3px solid hsl(212, 49%, 35%);
   transition: 0.3s;
 }
 
@@ -122,8 +121,10 @@ html {
   color: white;
 }
 
-#about .container-fluid {
+#about {
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .about-heading {
   font-size: 35px;
@@ -210,7 +211,8 @@ html {
   letter-spacing: 1px;
 }
 
-#pricing .container {
+#pricing {
+  min-height: 100vh;
 }
 
 #pricing #col-sm1 {
@@ -354,7 +356,7 @@ html {
   text-decoration: none;
 }
 #contact {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,7 +389,7 @@ html {
 #contact .btn {
   background-color: #2e91fc;
   letter-spacing: 3px;
-  font-weight: 500;
+  font-weight: 600;
 }
 #contact .btn:hover {
   background-color: #034986;
@@ -408,7 +410,7 @@ html {
   color: #1c93e4;
 }
 #contact .social-icons .fa-instagram:hover {
-  color: #ff6068;
+  color: #ff4a6f;
 }
 .signuppage {
   align-items: center;
@@ -417,6 +419,11 @@ html {
   align-items: center;
   justify-content: center;
 }
+
+.signuppage i img {
+  margin-bottom: 1.6px;
+}
+
 .signuppage .container {
   width: 300px;
   background-color: white;
@@ -490,6 +497,7 @@ html {
   margin-bottom: 20px;
   cursor: pointer;
   font-size: 1rem;
+  transition: 0.5s;
 }
 .signuppage input[type="submit"]:hover,
 .signuppage .loader-btn:hover {
@@ -513,6 +521,7 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 .loginpage .container {
   width: 300px;
   background-color: white;
@@ -535,6 +544,9 @@ html {
 }
 .loginpage .top-container i {
   color: #2e91fc;
+}
+.loginpage i img {
+  margin-bottom: 1.6px;
 }
 .loginpage .top-container i span {
   color: #353e5c;
@@ -585,6 +597,7 @@ html {
   margin-bottom: 20px;
   cursor: pointer;
   font-size: 1rem;
+  transition: 0.5s;
 }
 .loginpage input[type="submit"]:hover,
 .loginpage .loader-btn:hover {
@@ -703,7 +716,7 @@ html {
 }
 #success_tic {
   margin: 10% auto;
-  height: 100vh;
+  min-height: 100vh;
   background-color: transparent;
 }
 
@@ -897,6 +910,9 @@ html {
   #home .brand {
     font-size: 4rem;
   }
+  #contact form {
+    padding-bottom: 2rem;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -916,6 +932,21 @@ html {
   #courses h2 {
     font-size: 30px;
   }
+  /* #nav i img {
+    height: 25px;
+    width: 25px;
+    padding-bottom: 1px;
+  }
+  .loginpage i img {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 4px;
+  }
+  .signuppage i img {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 4px;
+  } */
 }
 @media screen and (max-width: 380px) {
   .loginpage .container {

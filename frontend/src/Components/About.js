@@ -1,5 +1,4 @@
 import React from "react";
-import Mimg from "../images/8225.svg";
 
 export const About = () => {
   return (

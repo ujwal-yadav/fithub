@@ -35,7 +35,7 @@ export const Pricing = () => {
                 <h1>
                   ₹700/<span className="month-text">month</span>
                 </h1>
-                <p>Personal Trainer</p>
+                <p className="text-decoration-line-through">Personal Trainer</p>
                 <p>Convienient Time</p>
                 <p className="text-decoration-line-through">Special Class</p>
                 <p>Group Traning</p>
