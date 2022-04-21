@@ -35,14 +35,12 @@ export const Home = () => {
                     <strong className="brand ">Fithub</strong>
                   </h2>
                   <h5
-                    className="my-3 wow bounceIn"
-                    data-aos="fade-in"
-                    data-aos-duration="2500"
+                    className="mb-3 wow bounceIn"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
                     data-aos-once="true"
                   >
-                    Push your fitness further with our mix of facilities and
-                    we'll support you with advice on new and better ways to
-                    train.
+                    In Pursuit of Good Health
                   </h5>
 
                   <div
