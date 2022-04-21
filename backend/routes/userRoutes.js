@@ -3,7 +3,7 @@ const router = require("express").Router();
 require("../db/conn");
 const bcrypt = require("bcrypt");
 
-///signup route
+//signup route
 router.post("/signup", async (req, res, next) => {
   try {
     const { name, email, password, cpassword } = req.body;
@@ -29,7 +29,7 @@ router.post("/signup", async (req, res, next) => {
   }
 });
 
-///login route
+//login route
 router.post("/login", async (req, res, next) => {
   try {
     const { email, password } = req.body;
